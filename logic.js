@@ -47,7 +47,7 @@ const checkWinner= () => {
 }
 
 const showWinner = (winner) => {
-    msg.innerText = `Congulations!! Winner is ${winner}`;
+    msg.innerText = `Congulations!! Winner is ${winner}.`;
     msgcont.classList.remove("hide");
     document.getElementById("main").style.backgroundColor = "greenyellow";
     cont.classList.add("hide");
