@@ -49,7 +49,7 @@ const checkWinner= () => {
 const showWinner = (winner) => {
     msg.innerText = `Congulations!! Winner is ${winner}.`;
     msgcont.classList.remove("hide");
-    document.getElementById("main").style.backgroundColor = "greenyellow";
+    document.getElementById("main").style.backgroundColor = "MediumSeaGreen";
     cont.classList.add("hide");
     for(let box of boxes){
         box.disabled = true;
@@ -59,7 +59,7 @@ const showWinner = (winner) => {
 const gameDraw = () => {
     msg.innerText = `Game Draw!!`;
     msgcont.classList.remove("hide");
-    document.getElementById("main").style.backgroundColor = "greenyellow";
+    document.getElementById("main").style.backgroundColor = "MediumSeaGreen";
     cont.classList.add("hide");
     for(let box of boxes){
         box.disabled = true;
