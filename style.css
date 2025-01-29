@@ -10,6 +10,10 @@ h1{
     margin-top: 1vh;
     font-size: 10vh;
 }
+h2{
+    font-size: 5vh;
+    margin: none;
+}
 .container{
     height: 70vh;
     display: flex;
@@ -64,30 +68,35 @@ h1{
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 8vh;
+        font-size: 6vh;
+    }
+    h2 {
+        font-size: 4vh;
     }
     .container {
         height: 60vh;
+        flex-direction: column;
     }
     .board {
-        width: 80vmin;
-        height: 80vmin;
-        gap: 1.5vmin;
+        width: 90vmin;
+        height: 90vmin;
+        gap: 2vmin;
     }
     .cell {
-        width: 24vmin;
-        height: 24vmin;
-        font-size: 7vmin;
+        width: 28vmin;
+        height: 28vmin;
+        font-size: 8vmin;
     }
-    .reset{
-        height: 8vh;
+    .reset, .new {
         width: 15vh;
-        border-radius: 1vh;
+        height: 8vh;
+        font-size: 2vh;
     }
     .msg {
-        font-size: 5vh;
+        font-size: 6vh;
     }
     .msg-container {
+        margin: 5vh;
         height: 20vh;
     }
 }

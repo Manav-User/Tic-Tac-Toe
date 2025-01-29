@@ -21,7 +21,7 @@ boxes.forEach((cell) => {
         }
         cell.disabled = true;
         count++;
-        console.log(count);
+        document.querySelector("h3").classList.add("hide");
         let IsWinner = checkWinner();
         if(count === 9 && !IsWinner){
             gameDraw();
@@ -37,7 +37,6 @@ const checkWinner= () => {
 
         if(pos1!="" && pos2!="" && pos3!=""){
             if(pos1==pos2 && pos2==pos3){
-                console.log("winner "+pos1);
                 showWinner(pos1);
                 return true;
             }
@@ -47,7 +46,12 @@ const checkWinner= () => {
 }
 
 const showWinner = (winner) => {
-    msg.innerText = `Congulations!! Winner is ${winner}.`;
+    if(winner=='X'){
+        msg.innerText = `Congulations!! Winner is Player 2.`;
+    }
+    else{
+        msg.innerText = `Congulations!! Winner is Player 1.`;
+    }
     msgcont.classList.remove("hide");
     document.getElementById("main").style.backgroundColor = "MediumSeaGreen";
     cont.classList.add("hide");
@@ -76,6 +80,7 @@ const resetGame = () => {
     msgcont.classList.add("hide");
     document.getElementById("main").style.backgroundColor = "#5e9592";
     cont.classList.remove("hide");
+    document.querySelector("h3").classList.remove("hide");
 }
 
 resetbtn.addEventListener("click",resetGame);
