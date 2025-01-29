@@ -47,14 +47,6 @@ h2{
     color: white;
     margin: 5vh;
 }
-.new{
-    height: 10vh;
-    width: 20vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: black;
-    color: white;
-}
 .msg{
     font-size: 10vh;
 }
@@ -87,7 +79,7 @@ h2{
         height: 28vmin;
         font-size: 8vmin;
     }
-    .reset, .new {
+    .reset{
         width: 15vh;
         height: 8vh;
         font-size: 2vh;
@@ -98,5 +90,8 @@ h2{
     .msg-container {
         margin: 5vh;
         height: 20vh;
+    }
+    .hide{
+        display: none;
     }
 }
